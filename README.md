@@ -170,6 +170,10 @@ Made with ❤️ by [PJ Developer](https://github.com/pjdeveloper896)
 ## 🌍 Live Demo
 
 [🌐 View Live Example](https://pjdeveloper896.github.io/Spider.css/docs/Example2.html)
+---
+
+[🌐 View Live Example](https://pjdeveloper896.github.io/Spider.css/docs/Index.html)
+---
 
 
 ---
