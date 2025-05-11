@@ -7,7 +7,7 @@
 
 **Spider.css** is a minimal yet powerful utility-first CSS framework built for modern web developers who want rapid development, flexible utilities, animations, dark mode support, and extensible theming — all in one file. Use it standalone or combine with your favorite JS framework. CDN ready. Developer-friendly. Stylish by default.
 
-![Spider.css Banner](https://pjdeveloper896.github.io/Spider.css/Black Grey Simple Cute Spider Illustration T-shirt.png)
+![Spider.css Banner](https://pjdeveloper896.github.io/Spider.css/Spider.png)
 
 ---
 
