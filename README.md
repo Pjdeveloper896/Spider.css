@@ -39,7 +39,10 @@ https://pjdeveloper896.github.io/Spider.css/dist/Spider.js
 ```html
 <link rel="stylesheet" href="https://pjdeveloper896.github.io/Spider.css/dist/Spider.css">
 ```
-
+### Download via npm 
+```bash
+npm i shopisticate-css
+```
 ---
 
 ## 🧪 Usage Example
