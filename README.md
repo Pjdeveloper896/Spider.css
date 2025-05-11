@@ -39,10 +39,6 @@ https://pjdeveloper896.github.io/Spider.css/dist/Spider.js
 ```html
 <link rel="stylesheet" href="https://pjdeveloper896.github.io/Spider.css/dist/Spider.css">
 ```
-### Download via npm 
-```bash
-npm i shopisticate-css
-```
 ---
 
 ## 🧪 Usage Example
@@ -181,4 +177,74 @@ Made with ❤️ by [PJ Developer](https://github.com/pjdeveloper896)
 
 ---
 
+# Shopisticate-css 
+
+
+---
+
+
+# shopisticate-css
+
+> ⚡ Instant starter setup for [Spider.css](https://github.com/Pjdeveloper896/Spider.css) — A clean and modular CSS framework
+
+**`shopisticate-css`** helps you quickly scaffold a basic environment for using Spider.css, complete with dependencies, examples, and structure.
+
+---
+
+## 🚀 Quick Start
+
+### 📦 Install with npm
+
+```bash
+npm i shopisticate-css
+````
+
+### 📁 What It Sets Up
+
+When you install this package, it provides:
+
+* ✅ A pre-configured `package.json` for working with Spider.css
+* 🧩 All necessary dependencies in `node_modules/`
+* 📄 A `doc/` folder inside the package with HTML usage examples
+* 🎨 The `spider.css` file (logo/header and main stylesheet)
+
+---
+
+## 📚 Example Usage
+
+You can find HTML examples demonstrating how to use Spider.css in:
+
 ```
+node_modules/shopisticate-css/doc/
+```
+
+Open any of the `.html` files in your browser to see Spider.css in action.
+
+---
+
+## 🕸️ About Spider.css
+
+[Spider.css](https://github.com/Pjdeveloper896/Spider.css) is a lightweight, modular CSS framework designed for clean, scalable, and maintainable styling. It encourages structure, separation, and reusable design patterns without JavaScript dependencies.
+
+---
+
+## ✅ Ideal For
+
+* Beginners exploring structured CSS frameworks
+* Rapid prototyping with modular styles
+* Developers who prefer native HTML + CSS workflows
+
+---
+ © [Pjdeveloper896](https://github.com/Pjdeveloper896)
+
+---
+---
+### After Download 
+1. After Download create html file.
+2. Add /node_modules/Spider.css/dist/Spider.css in link tag href attributes
+3. And start using Spider.css .
+
+> Made with 🕷️ and ❤️ for clean CSS architecture.
+
+
+---
