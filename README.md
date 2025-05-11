@@ -243,7 +243,11 @@ Open any of the `.html` files in your browser to see Spider.css in action.
 1. After Download create html file.
 2. Add /node_modules/Spider.css/dist/Spider.css in link tag href attributes
 3. And start using Spider.css .
-
+---
+---
+### 📃 Licence
+ISC 
+---
 > Made with 🕷️ and ❤️ for clean CSS architecture.
 
 
