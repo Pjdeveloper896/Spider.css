@@ -252,3 +252,142 @@ ISC
 
 
 ---
+# Spider.css and Shopisticate-css - version 1.5.0.
+
+
+---
+
+# Spider.css v1.5.0 — Documentation
+
+## 1. Effects Module
+
+The Effects Module provides advanced, visually appealing CSS effects and animations to enhance UI elements with minimal setup. Use these classes to quickly apply stylish backgrounds, animations, and interactive effects.
+
+---
+
+### 1.1 Background Text Clip Effects
+
+These classes create a clipped background image effect on text, showing the image inside the text shape.
+
+| Class            | Description                                | Usage Example                         |
+| ---------------- | ------------------------------------------ | ------------------------------------- |
+| `.img`           | Background clip with tomato image.         | `<div class="img">Tomato</div>`       |
+| `.bgtext-tomato` | Text clipped with tomato image background. | `<h1 class="bgtext-tomato">Text</h1>` |
+| `.bgtext-ocean`  | Text clipped with ocean image background.  | `<h1 class="bgtext-ocean">Text</h1>`  |
+| `.bgtext-forest` | Text clipped with forest image background. | `<h1 class="bgtext-forest">Text</h1>` |
+
+---
+
+### 1.2 Icon Styles
+
+Material Icons styled with multiple size and color options, plus custom SVG background icons.
+
+| Class                                                     | Description                                          | Example Usage                                |
+| --------------------------------------------------------- | ---------------------------------------------------- | -------------------------------------------- |
+| `.icon`                                                   | Base icon class for inline Material Icons.           | `<span class="icon icon-primary">...</span>` |
+| `.icon-lg`                                                | Large icon size (2rem).                              |                                              |
+| `.icon-xl`                                                | Extra-large icon size (3rem).                        |                                              |
+| `.icon-sm`                                                | Small icon size (1rem).                              |                                              |
+| `.icon-primary`                                           | Blue colored icon (#1976d2).                         |                                              |
+| `.icon-success`                                           | Green colored icon (#2e7d32).                        |                                              |
+| `.icon-danger`                                            | Red colored icon (#d32f2f).                          |                                              |
+| `.icon-warning`                                           | Yellow colored icon (#fbc02d).                       |                                              |
+| `.icon-white`                                             | White colored icon.                                  |                                              |
+| `.icon-black`                                             | Black colored icon.                                  |                                              |
+| `.icon-moon`, `.icon-sun`, `.icon-home`, `.icon-settings` | Custom SVG background icons with fixed size 24x24px. |                                              |
+
+---
+
+### 1.3 Effects and Animations
+
+| Class                | Description                                                   |
+| -------------------- | ------------------------------------------------------------- |
+| `.rainbow-border`    | Animated rainbow gradient border around elements.             |
+| `.float-interactive` | Subtle upward float and shadow on hover for interactive feel. |
+| `.glass-blur`        | Glassmorphism style with blur and translucent background.     |
+| `.pulse-shadow`      | Pulsing shadow animation for glowing effects.                 |
+
+---
+
+### 1.4 Unique Advanced Effects
+
+| Class                    | Description                                              |
+| ------------------------ | -------------------------------------------------------- |
+| `.holographic-text`      | Animated holographic linear gradient text effect.        |
+| `.card-3d`               | Container enabling 3D card flip perspective.             |
+| `.card-inner`            | Inner card that flips 180° on hover to reveal back side. |
+| `.animated-gradient-btn` | Button with continuously animated gradient border.       |
+| `.morph-blob`            | Morphing blob shape with animated border-radius.         |
+| `.noise-bg`              | Background with subtle noise texture overlay.            |
+| `.animated-grid`         | Moving grid background animation for dynamic effect.     |
+
+---
+
+## 2. Button.js Module in Spider.css v1.5.0
+
+The Button.js module enhances buttons with dynamic styling, color customizations, effects, and animations through JavaScript. It integrates seamlessly with Spider.css styles to allow easy button creation and control.
+
+### 2.1 Features
+
+* Dynamically create buttons with specified text, colors, and styles.
+* Support for multiple color themes (primary, success, danger, warning, etc.).
+* Animations and hover effects configurable via JS.
+* API to add/remove buttons and modify styles on the fly.
+* Supports icon integration with Material Icons or custom SVG icons.
+* Responsive and accessible buttons ready for any UI.
+
+### 2.2 Usage
+
+```js
+// Create a new button
+const myButton = new SpiderButton({
+  text: 'Click Me',
+  color: 'primary',        // Options: primary, success, danger, warning, white, black
+  size: 'lg',              // Options: sm, md, lg, xl
+  icon: 'icon-home',       // Optional icon class to display inside button
+  animated: true           // Enable animated gradient border or pulse effect
+});
+
+// Add button to a container element
+myButton.appendTo(document.getElementById('button-container'));
+
+// Update button text dynamically
+myButton.setText('Updated Text');
+
+// Change color dynamically
+myButton.setColor('danger');
+
+// Remove button
+myButton.remove();
+```
+
+### 2.3 Button Styles
+
+* Uses CSS classes from Spider.css core for consistent look.
+* Integrates `.animated-gradient-btn`, `.pulse-shadow` for animated effects.
+* Supports `.float-interactive` for hover transform effects.
+
+### 2.4 API Methods
+
+| Method                      | Description                                                        |
+| --------------------------- | ------------------------------------------------------------------ |
+| `new SpiderButton(options)` | Creates a button with options (text, color, size, icon, animated). |
+| `appendTo(element)`         | Appends the button to a DOM container.                             |
+| `setText(text)`             | Updates the button's displayed text.                               |
+| `setColor(colorName)`       | Changes button color theme dynamically.                            |
+| `remove()`                  | Removes the button from DOM and cleans event listeners.            |
+
+---
+
+### Summary
+
+Spider.css v1.5.0’s Effects Module and Button.js bring together modern CSS effects and dynamic button controls, making UI development fast and visually stunning.
+
+Use the Effects Module to apply backgrounds, animations, and 3D effects with simple classes.
+
+Use Button.js to create powerful, animated, customizable buttons controlled by JavaScript, fully compatible with Spider.css styles.
+
+---
+
+
+
