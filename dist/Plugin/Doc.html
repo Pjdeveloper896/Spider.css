@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CSS Effects Showcase</title>
+  <link href="effects.css" rel="stylesheet">
+  <script src="Css.js" type="text/javascript" charset="utf-8"></script>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #0f0f0f, #1a1a1a);
+      color: #f0f0f0;
+      line-height: 1.6;
+    }
+
+    header {
+      text-align: center;
+      padding: 3rem 1rem;
+      background: linear-gradient(90deg, #ff0080, #7928ca);
+      color: white;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+    }
+
+    section {
+      background: #1e1e1e;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s;
+    }
+
+    section:hover {
+      transform: translateY(-5px);
+    }
+
+    section h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: #ff6;
+    }
+
+    .demo-box {
+      margin-top: 1rem;
+      padding: 1rem;
+      border-radius: 10px;
+      background: #2a2a2a;
+    }
+
+    .grid-icons {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: flex-start;
+    }
+
+    .card-3d {
+      perspective: 1000px;
+    }
+
+    .card-inner {
+      transition: transform 0.6s;
+      transform-style: preserve-3d;
+    }
+
+    .card-3d:hover .card-inner {
+      transform: rotateY(180deg);
+    }
+
+    .card-front, .card-back {
+      position: absolute;
+      backface-visibility: hidden;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+    }
+
+    .card-back {
+      transform: rotateY(180deg);
+      background: #333;
+    }
+
+    button {
+      cursor: pointer;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>✨ CSS Effects Showcase ✨</h1>
+    <p>A collection of modern CSS effects in action</p>
+  </header>
+
+  <div class="container">
+
+    <section>
+      <h2>🎨 Text with Image Background</h2>
+      <div class="demo-box">
+        <h2 class="bgtext-tomato">Tomato Text</h2>
+        <h2 class="bgtext-ocean">Ocean Text</h2>
+        <h2 class="bgtext-forest">Forest Text</h2>
+      </div>
+    </section>
+
+    <section>
+      <h2>🚀 CSS Icons</h2>
+      <div class="demo-box grid-icons">
+        <span class="icon icon-moon"></span>
+        <span class="icon icon-sun"></span>
+        <span class="icon icon-home"></span>
+        <span class="icon icon-settings"></span>
+      </div>
+    </section>
+
+    <section>
+      <h2>🌈 Rainbow Border + Hover</h2>
+      <div class="demo-box rainbow-border float-interactive">
+        Hover me! 🌈
+      </div>
+    </section>
+
+    <section>
+      <h2>🧊 Glass Blur</h2>
+      <div class="demo-box glass-blur">
+        Glass effect using <code>backdrop-filter</code>
+      </div>
+    </section>
+
+    <section>
+      <h2>💡 Pulse Shadow</h2>
+      <div class="demo-box pulse-shadow">
+        Pulsing glow shadow effect
+      </div>
+    </section>
+
+    <section>
+      <h2>🔮 Holographic Text</h2>
+      <div class="demo-box holographic-text">
+        HOLOGRAPHIC ✨ TEXT
+      </div>
+    </section>
+
+    <section>
+      <h2>🃏 3D Flip Card</h2>
+      <div class="card-3d" style="width: 200px; height: 120px;">
+        <div class="card-inner" style="position: relative; width: 100%; height: 100%;">
+          <div class="card-front demo-box">
+            Front
+          </div>
+          <div class="card-back demo-box">
+            Back
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>🎆 Animated Gradient Button</h2>
+      <button class="animated-gradient-btn" style="padding: 1rem 2rem; border-radius: 8px;">Click Me</button>
+    </section>
+
+    <section>
+      <h2>💧 Morphing Blob</h2>
+      <div class="morph-blob"></div>
+    </section>
+
+    <section>
+      <h2>🌌 Noise Background</h2>
+      <div class="demo-box noise-bg" style="height: 100px;">
+        Subtle noise over dark background
+      </div>
+    </section>
+
+    <section>
+      <h2>🧮 Animated Grid</h2>
+      <div class="demo-box animated-grid" style="height: 100px;">
+        Moving grid effect
+      </div>
+    </section>
+
+  </div>
+<!-- Solid -->
+<button class="btn btn-blue btn-lg btn-pill btn-shadow">Blue Solid</button>
+
+<!-- Outline -->
+<button class="btn btn-outline-red btn-md btn-rounded">Red Outline</button>
+
+<!-- Ghost -->
+<button class="btn btn-ghost-purple btn-sm">Purple Ghost</button>
+
+<!-- Flat -->
+<button class="btn btn-flat-green btn-md btn-pill btn-glow">Flat Green</button>
+
+<!-- Link -->
+<button class="btn btn-link-orange btn-sm">Orange Link</button>
+
+<!-- Disabled -->
+<button class="btn btn-blue btn-lg" disabled>Disabled</button>
+
+</body>
+</html>
