@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SVG Components for Landing Pages</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background-color: #f9f9f9;
+    }
+
+    .hero {
+      position: relative;
+      height: 100vh;
+      background: linear-gradient(to right, #667eea, #764ba2);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .section {
+      position: relative;
+      padding: 80px 20px;
+      background: #fff;
+      text-align: center;
+    }
+
+    .svg-shape {
+      position: absolute;
+      width: 100%;
+      height: auto;
+    }
+
+    .top-divider {
+      top: -1px;
+      left: 0;
+    }
+
+    .bottom-divider {
+      bottom: -1px;
+      left: 0;
+    }
+
+    .blob {
+      position: absolute;
+      z-index: 0;
+      opacity: 0.3;
+    }
+
+    .blob1 {
+      top: 20px;
+      left: 10px;
+      width: 200px;
+    }
+
+    .blob2 {
+      bottom: 20px;
+      right: 10px;
+      width: 300px;
+    }
+
+    .content {
+      position: relative;
+      z-index: 2;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="content">
+      <h1>Welcome to Our Product</h1>
+      <p>Simple, beautiful, effective.</p>
+    </div>
+
+    <!-- Abstract blob SVGs -->
+    <svg class="blob blob1" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+      <path fill="#ffffff" d="M44.8,-48.9C59.6,-35.5,74.6,-17.8,72.7,-2.2C70.8,13.4,51.9,26.8,37.1,42.1C22.2,57.5,11.1,74.8,-3.6,79.1C-18.3,83.4,-36.6,74.8,-47.4,60.7C-58.2,46.6,-61.6,27.9,-60.2,11.2C-58.8,-5.5,-52.6,-20.2,-42.8,-33.3C-33,-46.3,-19.5,-57.6,-3.3,-59.5C13,-61.4,26,-53.7,44.8,-48.9Z" transform="translate(100 100)" />
+    </svg>
+
+    <svg class="blob blob2" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+      <path fill="#ffffff" d="M40.9,-58.2C52.1,-47.2,60.9,-34,66.8,-19.5C72.7,-5,75.8,10.9,68.3,22.2C60.7,33.5,42.5,40.3,26.1,46.6C9.6,52.8,-5.1,58.6,-20.2,56.5C-35.4,54.5,-51.1,44.6,-56.6,30.8C-62.1,17,-57.3,-0.8,-49.8,-15.6C-42.2,-30.4,-32,-42.2,-19.6,-53C-7.1,-63.8,7.7,-73.6,22.5,-71.4C37.3,-69.2,52.1,-55.2,40.9,-58.2Z" transform="translate(100 100)" />
+    </svg>
+  </section>
+
+  <!-- Section Divider - Wave Top -->
+  <svg class="svg-shape top-divider" viewBox="0 0 1440 150" preserveAspectRatio="none">
+    <path d="M0,96L80,90.7C160,85,320,75,480,74.7C640,75,800,85,960,96C1120,107,1280,117,1360,122.7L1440,128V0H1360C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0H0Z" fill="#fff"/>
+  </svg>
+
+  <!-- Section -->
+  <section class="section">
+    <div class="content">
+      <h2>Why Choose Us?</h2>
+      <p>Our platform offers cutting-edge features, fast performance, and a clean interface built with care.</p>
+    </div>
+  </section>
+
+  <!-- Section Divider - Wave Bottom -->
+  <svg class="svg-shape bottom-divider" viewBox="0 0 1440 150" preserveAspectRatio="none">
+    <path d="M0,64L80,74.7C160,85,320,107,480,117.3C640,128,800,128,960,117.3C1120,107,1280,85,1360,74.7L1440,64V160H1360C1280,160,1120,160,960,160C800,160,640,160,480,160C320,160,160,160,80,160H0Z" fill="#fff"/>
+  </svg>
+
+</body>
+</html>
