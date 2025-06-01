@@ -1,0 +1,13 @@
+/* RED */
+.bg-red-100    { background-color: #fee2e2 !important; }
+.bg-red-500    { background-color: #ef4444 !important; }
+.bg-red-900    { background-color: #7f1d1d !important; }
+.text-red-500  { color: #ef4444 !important; }
+.border-red-500{ border-color: #ef4444 !important; }
+
+/* BLUE */
+.bg-blue-100   { background-color: #dbeafe !important; }
+.bg-blue-500   { background-color: #3b82f6 !important; }
+.bg-blue-900   { background-color: #1e3a8a !important; }
+.text-blue-500 { color: #3b82f6 !important; }
+.border-blue-500 { border-color: #3b82f6 !important; }
