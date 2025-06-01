@@ -361,7 +361,7 @@ This project is licensed under the Isc License. See the [LICENSE](LICENSE) file 
 
 ## Contact
 
-Created by **Prasoon singh jadon **
+Created by **Prasoon singh jadon**
 
 * GitHub: [https://github.com/Pjdeveloper896](https://github.com/yourusername)
 * Email: [prasoonjadon.pis6@gmail.com](mailto:prasoonjadon.pis6@gmail.com)
