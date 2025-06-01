@@ -3,33 +3,25 @@
   function applySpyAttributes() {
     const elements = document.querySelectorAll('[spy]');
     elements.forEach((el) => {
-      const attributes = el.getAttribute('spy').split(' ');
+      const attrValue = el.getAttribute('spy');
+      if (!attrValue) return;
 
+      const attributes = attrValue.trim().split(/\s+/);
       attributes.forEach((attr) => {
         switch (attr) {
           case 'fade':
-            el.classList.add('fade');
-            break;
           case 'bounce':
-            el.classList.add('bounce');
-            break;
           case 'rounded':
-            el.classList.add('rounded');
-            break;
           case 'shadow':
-            el.classList.add('shadow');
-            break;
           case 'bg-primary':
-            el.classList.add('bg-primary');
-            break;
           case 'text-center':
-            el.classList.add('text-center');
+            el.classList.add(attr);
             break;
           case 'm1':
             el.classList.add('m-1');
             break;
           default:
-            break;
+            break; // Ignore unknown attributes
         }
       });
     });
@@ -39,12 +31,13 @@
   function applyShopAttributes() {
     const elements = document.querySelectorAll('[shop]');
     elements.forEach((el) => {
-      const attributes = el.getAttribute('shop').split(' ');
+      const attrValue = el.getAttribute('shop');
+      if (!attrValue) return;
 
+      const attributes = attrValue.trim().split(/\s+/);
       attributes.forEach((attr) => {
         if (attr === 'grid') {
-          el.classList.add('d-grid');
-          el.classList.add('grid-cols-3');
+          el.classList.add('d-grid', 'grid-cols-3');
         }
       });
     });
@@ -53,8 +46,11 @@
   // Handle Dark Mode Toggle
   function toggleDarkMode() {
     const darkModeButton = document.querySelector('[data-toggle="dark-mode"]');
+    if (!darkModeButton) return;
+
     darkModeButton.addEventListener('click', () => {
-      document.body.setAttribute('data-theme', document.body.getAttribute('data-theme') === 'dark' ? 'light' : 'dark');
+      const currentTheme = document.body.getAttribute('data-theme');
+      document.body.setAttribute('data-theme', currentTheme === 'dark' ? 'light' : 'dark');
     });
   }
 
@@ -62,9 +58,7 @@
   function toggleResponsiveClasses() {
     const elements = document.querySelectorAll('.d-flex');
     elements.forEach((el) => {
-      if (el.classList.contains('d-flex')) {
-        el.classList.add('flex-column');
-      }
+      el.classList.add('flex-column');
     });
   }
 
