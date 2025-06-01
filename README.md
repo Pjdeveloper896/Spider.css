@@ -205,4 +205,167 @@ npm install shopisticate-css
 
 © [pjdeveloper896](https://github.com/pjdeveloper896) — Built with 🕷️ and ❤️
 official site https://spidercss.netlify.app/
+---
+Official site for Spider.css 2.0.0 https://683c54f0ebdce2b7d6a3dcba--silly-pithivier-6cf59f.netlify.app/
+---
+
+# Spider.css 2.0.0
+
+A lightweight, modern CSS framework combined with a JavaScript utility library designed for rapid UI development with custom attributes, component toggles, responsive layouts, and advanced interactive elements.
+
+---
+
+## Table of Contents
+
+* [About](#about)
+* [Features](#features)
+* [Installation](#installation)
+* [Usage](#usage)
+* [JavaScript Modules](#javascript-modules)
+* [UI Components](#ui-components)
+* [Customization](#customization)
+* [Contributing](#contributing)
+* [License](#license)
+* [Contact](#contact)
+
+---
+
+## About
+
+Spider.css 2.0.0 is a modern, attribute-driven CSS framework paired with a JavaScript utility library to empower developers to build responsive, accessible, and dynamic web interfaces quickly. It leverages custom HTML attributes (`spy`, `shop`, and others) to declaratively control UI animations, layouts, and interactive components like modals, toasts, dropdowns, and tabs.
+
+---
+
+## Features
+
+* **Attribute-driven Styling**
+  Apply dynamic styles and animations using `[spy]` and `[shop]` attributes.
+
+* **Responsive Layout Utilities**
+  Simple grid and flexbox layout controls for quick responsive design.
+
+* **Dark Mode Support**
+  Toggle dark/light themes easily with built-in support.
+
+* **JavaScript UI Components**
+  Modular components including modals, toasts, dropdowns, tabs, alerts, and navigation toggles.
+
+* **Auto Binding**
+  Automatically activate components via HTML attributes (`data-spider`) without manual JS calls.
+
+* **SVG Component Library**
+  Integrated scalable icons and graphics with customizable styling.
+
+* **Professional UI Components**
+  Prebuilt navbar, buttons, cards, forms, and footer components for rapid prototyping.
+
+---
+
+## Installation
+
+Add Spider.css and Spider.js to your project by downloading or linking CDN (replace with your CDN or local path):
+
+```html
+<link rel="stylesheet" href="spider.css">
+<script src="spider.js"></script>
+```
+
+---
+
+## Usage
+
+### Basic Example
+
+```html
+<button data-spider="toast" data-message="Hello Spider!" data-type="success">Show Toast</button>
+```
+
+### Attribute-Driven Styling
+
+```html
+<div spy="fade rounded shadow bg-primary text-center m1">
+  Stylish Box with Spider.css
+</div>
+
+<div shop="grid">
+  <div>Item 1</div>
+  <div>Item 2</div>
+  <div>Item 3</div>
+</div>
+```
+
+### Dark Mode Toggle
+
+```html
+<button data-toggle="dark-mode">Toggle Dark Mode</button>
+```
+
+---
+
+## JavaScript Modules
+
+Spider.css 2.0.0 comes with a modular JavaScript library providing:
+
+| Feature      | Function           | Description                         |
+| ------------ | ------------------ | ----------------------------------- |
+| Modal        | `spiderModal()`    | Display popup modal windows         |
+| Toast        | `spiderToast()`    | Show temporary notification toasts  |
+| Dropdown     | `spiderDropdown()` | Toggle dropdown menus               |
+| Tabs         | `spiderTabs()`     | Switch between tabbed content       |
+| Alert Modal  | `spiderAlert()`    | Confirmation dialogs with callbacks |
+| Auto Binding | `spiderAutoBind()` | Auto-initialize components          |
+| Nav Toggle   | `toggleNav()`      | Show/hide navigation menus          |
+
+**Example:**
+
+```js
+spiderComponent.init(); // Initialize dropdowns and tabs
+spiderAutoBind();       // Bind UI elements automatically
+```
+
+---
+
+## UI Components
+
+Spider.css 2.0.0 includes a professional UI component library with:
+
+* Responsive Navbar with toggle
+* Buttons (primary, secondary, disabled, icon buttons)
+* Cards with images and content
+* Forms with validation styles
+* Footers with social media links
+
+All components are fully customizable via CSS variables and attribute options.
+
+---
+
+## Customization
+
+* Modify CSS variables inside `spider.css` for theme colors, spacing, fonts.
+* Extend JavaScript modules by adding custom event handlers or UI logic.
+* Use `spy` and `shop` attributes liberally for fast, maintainable styling.
+
+---
+
+## Contributing
+
+Contributions are welcome! Please fork the repo, create a branch for your feature or fix, and submit a pull request. Make sure your code is clean, documented, and follows the project’s style.
+
+---
+
+## License
+
+This project is licensed under the Isc License. See the [LICENSE](LICENSE) file for details.
+
+---
+
+## Contact
+
+Created by **Prasoon singh jadon **
+
+* GitHub: [https://github.com/Pjdeveloper896](https://github.com/yourusername)
+* Email: [prasoonjadon.pis6@gmail.com](mailto:prasoonjadon.pis6@gmail.com)
+
+---
+
 
