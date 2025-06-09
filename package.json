@@ -1,10 +1,16 @@
 {
   "name": "shopisticate-css",
   "version": "2.0.0",
-  "description": "A lightweight and responsive css framework.",
-  "main": "spider.css",
+  "description": "A lightweight and responsive CSS framework.",
+  "main": "dist/Spider.css",
+  "exports": {
+    "default": "./dist/Spider.css"
+  },
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "test": "dev "
+    "test": "echo \"No test specified\" && exit 0"
   },
   "repository": {
     "type": "git",
@@ -14,9 +20,10 @@
     "css",
     "framework",
     "responsive",
-    "shopisticate-css"
+    "shopisticate-css",
+    "spider.css"
   ],
-  "author": "prasoon singh jadon",
+  "author": "Prasoon Singh Jadon",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Pjdeveloper896/Spider.css/issues"
