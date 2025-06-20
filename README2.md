@@ -159,4 +159,4 @@ Use mobile-first utility classes with these prefixes:
 > Designed with 🧠 logic and 🧡 heart to be developer-friendly, fast, and flexible.
 
 ```
-
+npm i shopisticate-css
